@@ -130,6 +130,9 @@ h1, h2, h3, h4, h5, h6 {
   .margin-top-on-mobile{
     margin-top: 40px;
   }
+  .resize-small-mobile{
+    width: 50%;
+  }
 }
 
 @media (min-width: 992px) {
