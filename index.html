@@ -12,7 +12,7 @@
   <meta name="author" content="AlexX">
   <meta property="og:site_name" content="AlexX" />
   <meta property="og:url" content="https://abojkov.com/" />
-  <meta property="og:image" content="https://abojkov.com/content/imgs/metaLogo.png" />
+  <meta property="og:image" content="https://abojkov.com/assets/img/metaLogo.png" />
   <meta property="og:type" content="personal" />
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,9 +60,7 @@
   <script>
     console.log(window.innerWidth);
 
-    if(document.cookie === "") {
-      //alert("NEMA COOKIE");
-    } else {
+    if(document.cookie !== "") {
       if(document.cookie === "lang=en")
         window.location.replace("./en");
       else
