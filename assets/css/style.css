@@ -100,6 +100,10 @@ h1, h2, h3, h4, h5, h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+  [class^=col-sm-]{
+    margin-top: 25px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -365,6 +369,39 @@ section {
   left: calc(50% - 20px);
 }
 
+
+.section-title h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.section-title h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h3::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
 .section-title p {
   margin-bottom: 0;
 }
@@ -570,6 +607,7 @@ section {
 }
 
 .portfolio .portfolio-wrap {
+  border-radius: 10px;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -902,9 +940,12 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background: #40394a;
+}
+
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 
 .contact .info i {
@@ -921,19 +962,27 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+.contact a, .contact h2 {
+  color: white;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
 .contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: white;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #728394;
+  color: white;
 }
 
 .contact .info .email, .contact .info .phone {
@@ -1115,11 +1164,11 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
-  color: #45505b;
+  background: #1c1427;
+  color: white;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 #footer h3 {
@@ -1132,7 +1181,7 @@ section {
 }
 
 #footer p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
