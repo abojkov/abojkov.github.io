@@ -409,8 +409,7 @@ strong {
   padding: 0;
   cursor: pointer;
   margin: 0;
-  width: 23px;
-  overflow: hidden;
+  width: 30px;
   height: 35px;
   outline: none;
 }
@@ -443,7 +442,7 @@ strong {
   background: var(--white-color);
   transition: background 10ms 300ms ease;
   display: block;
-  width: 30px;
+  width: 23px;
   height: 2px;
   position: relative;
 }
@@ -457,7 +456,7 @@ strong {
   right: 0;
   left: 0;
   background: var(--white-color);
-  width: 30px;
+  width: 23px;
   height: 2px;
   content: '';
 }
