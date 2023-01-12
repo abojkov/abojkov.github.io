@@ -27,4 +27,9 @@
     }
   });
 
+  // CLOSE MOBILE NAVIGATION ON LINK CLICK
+  $('.nav-link').click(() => {
+    $('.navbar-toggler').click();
+  })
+
 })(window.jQuery);
