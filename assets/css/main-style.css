@@ -275,11 +275,12 @@ strong {
 }
 
 .custom-link {
-	background-color: var(--primary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--white-color);
 }
 
 .custom-link:hover {
-	background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 /*---------------------------------------
@@ -299,7 +300,6 @@ strong {
   line-height: 70px;
   text-align: center;
 }
-
 
 /*---------------------------------------
   NAVIGATION              
@@ -361,6 +361,10 @@ strong {
   color: var(--white-color);
 }
 
+.navbar-brand img {
+  height: 50px;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
@@ -405,7 +409,8 @@ strong {
   padding: 0;
   cursor: pointer;
   margin: 0;
-  width: 30px;
+  width: 23px;
+  overflow: hidden;
   height: 35px;
   outline: none;
 }
@@ -1104,13 +1109,13 @@ strong {
   }
 
   .hero {
-    padding-top: 200px;
-    padding-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 50px;
   }
 
   .hero-text {
     top: 0;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
   }
 
   .about-thumb {
@@ -1163,15 +1168,22 @@ strong {
   .navbar .container {
     margin-right: 12px;
     margin-left: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-brand img {
+    margin-top: -0.3125rem;
+    height: 40px;
   }
 
   .hero-title {
     width: 100%;
-    font-size: max(7vw, 10px);
+    font-size: max(8.3vw, 5px);
   }
 
   .hero h5 {
-    width: 70%;
+    min-width: 70%;
   }
 
   .order-first {
@@ -1185,6 +1197,39 @@ strong {
   .avatar-image {
     width: 70px;
     height: 70px;
+  }
+
+  .profile-thumb {
+    padding-bottom: 20px;
+  }
+
+  .profile-small-title {
+    display: block;
+    border-right: none;
+  }
+
+  .profile-small-title + span {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section-title-icon {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  /*
+  Because the footer is fixed and last section (which is contact) will need more space below.
+   */
+  .contact {
+    padding-bottom: 80px;
   }
 }
 
