@@ -1171,6 +1171,10 @@ strong {
     padding-bottom: 0;
   }
 
+  .navbar-nav {
+    margin-bottom: 7px;
+  }
+
   .navbar-brand img {
     margin-top: -0.3125rem;
     height: 40px;
