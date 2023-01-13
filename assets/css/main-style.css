@@ -284,6 +284,29 @@ strong {
 }
 
 /*---------------------------------------
+  CUSTOM ALERT DESIGN
+-----------------------------------------*/
+.aby-alert {
+  padding: 15px;
+  background-color: #f44336;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.aby-alert, .aby-alert * {
+  color: var(--white-color) !important;
+}
+
+.aby-alert i {
+  margin-right: 10px;
+}
+
+.aby-alert.success {background-color: #04AA6D;}
+.aby-alert.info {background-color: #2196F3;}
+.aby-alert.warning {background-color: #ff9800;}
+
+/*---------------------------------------
   GLOBAL
 -----------------------------------------*/
 
@@ -488,7 +511,9 @@ strong {
 }
 
 .hero-title,
-.hero h2, h5 {
+.hero h2,
+h5,
+.portfolio-title {
   color: var(--secondary-color);
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
@@ -773,6 +798,7 @@ strong {
   width: 100%;
   transform: rotate(10deg) translateY(80px);
   transition: all ease 0.5s;
+  border: 1px solid var(--secondary-color);
 }
 
 .projects-title {
@@ -787,6 +813,49 @@ strong {
   margin-bottom: 5px;
 }
 
+.portfolio-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-info {
+  padding-top: 62px;
+}
+
+.portfolio-details .portfolio-info * {
+  color: var(--dark-color)
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-info p {
+  font-size: 15px;
+  padding: 0;
+  text-align: justify;
+}
+
+.portfolio-details .portfolio-info a {
+  color: var(--primary-color)
+}
+
+.portfolio-details .portfolio-info a:hover {
+  color: var(--secondary-color)
+}
 
 /*---------------------------------------
   CONTACT              
@@ -1007,6 +1076,33 @@ strong {
   color: var(--white-color);
 }
 
+/*---------------------------------------
+  VENOBOX
+-----------------------------------------*/
+.venoratio {
+  width: 70%;
+}
+
+/*---------------------------------------
+  CAROUSEL
+-----------------------------------------*/
+.portfolio-details .owl-carousel .owl-nav, .portfolio-details .owl-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.portfolio-details .owl-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.portfolio-details .owl-carousel .owl-dot.active {
+  background-color: var(--primary-color) !important;
+}
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1185,6 +1281,11 @@ strong {
     font-size: max(8.3vw, 5px);
   }
 
+  .portfolio-title {
+    width: 100%;
+    text-align: center;
+  }
+
   .hero h5 {
     min-width: 70%;
   }
@@ -1239,6 +1340,11 @@ strong {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+  .venoratio {
+    width: 100%;
+    height: 70vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1284,4 +1390,3 @@ strong {
     min-width: inherit;
   }
 }
-
