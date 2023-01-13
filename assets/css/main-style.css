@@ -1041,6 +1041,20 @@ h5,
   color: var(--white-color);
 }
 
+/*---------------------------------------
+  ERROR PAGE
+-----------------------------------------*/
+.error-page p {
+  color: var(--white-color);
+}
+
+.error-page p a {
+  color: var(--primary-color);
+}
+
+.error-page img {
+  width: 200px;
+}
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -1256,6 +1270,11 @@ h5,
     border-right: 0;
     border-bottom: 1px solid var(--border-color);
     border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+  }
+
+  .error-page .img-wrapper {
+    margin-top: -50px;
+    margin-bottom: 100px;
   }
 }
 
