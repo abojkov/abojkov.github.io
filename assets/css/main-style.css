@@ -691,7 +691,7 @@ h5,
   z-index: 99;
 }
 
-.services-thumb-up .content * {
+.services-thumb .content *, .services-thumb-up .content * {
   margin: 0;
 }
 
@@ -1238,12 +1238,12 @@ h5,
 
   .services-thumb-up {
     bottom: 0;
-    margin-bottom: 32px;
+    margin-bottom: 0;
   }
 
   .services-thumb {
-    margin-bottom: 32px;
-    padding-bottom: 270px;
+    margin-bottom: 0;
+    padding-bottom: 200px;
   }
 
   .services-icon-wrap {
