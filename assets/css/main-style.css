@@ -188,10 +188,10 @@ strong {
   left: 50%;
   width: 45px;
   height: 45px;
-  margin-top: -10px;
-  margin-left: -10px;
+  margin-top: -22px;
+  margin-left: -22px;
   border-radius: 50%;
-  border: 3px solid var(--primary-color);
+  border: 5px solid var(--primary-color);
   border-top-color: var(--white-color);
   animation: spinner .9s linear infinite;
 }
