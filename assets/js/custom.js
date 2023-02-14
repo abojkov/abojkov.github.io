@@ -39,7 +39,8 @@
   // Initiate venobox (lightbox feature used in portofilo)
   new VenoBox({
     'share': false,
-    'height': '100%'
+    'height': '100%',
+    'spinner': 'flow'
   });
 
   // Portfolio details carousel
