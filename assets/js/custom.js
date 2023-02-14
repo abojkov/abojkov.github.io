@@ -29,7 +29,11 @@
 
   // CLOSE MOBILE NAVIGATION ON LINK CLICK
   $('.nav-link').click(() => {
-    $('.navbar-toggler').click();
+    let width = Math.max(window.screen.width, window.innerWidth);
+    let shouldHideMenuItems = width <= 991;
+    if (shouldHideMenuItems) {
+      $('.navbar-toggler').click();
+    }
   })
 
   // Initiate venobox (lightbox feature used in portofilo)
