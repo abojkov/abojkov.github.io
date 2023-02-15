@@ -369,8 +369,9 @@
 
       <section class="projects section-padding" id="section_4">
         <div class="container">
-          <div class="row">
 
+          <!-- Title -->
+          <div class="row">
             <div class="col-lg-12 col-md-8 col-12 ms-auto">
               <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
 
@@ -380,12 +381,26 @@
 
               </div>
             </div>
+          </div>
 
-            <div class="clearfix"></div>
+          <!-- Filter -->
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+              <ul id="portfolio-filters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".project-web" class="">Web Apps</li>
+                <li data-filter=".project-android" class="">Android Apps</li>
+                <li data-filter=".project-software" class="">Software</li>
+                <li data-filter=".project-design">Design</li>
+                <li class="filter-special" data-filter=".project-external">External</li>
+              </ul>
+            </div>
+          </div>
 
-            <!-- LIST PROJECTS HERE -->
+          <!-- Projects -->
+          <div class="row" id="projects-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-android">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-android">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Android app</small>
@@ -404,7 +419,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-android">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-android project-external">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Android app</small>
@@ -423,7 +438,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-design">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Design</small>
@@ -442,7 +457,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-android">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-android">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Android app</small>
@@ -461,7 +476,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-design">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Design</small>
@@ -479,7 +494,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-web">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Web app</small>
@@ -498,7 +513,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-android">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-android project-external">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Android app</small>
@@ -517,7 +532,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-android">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-android">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Android app</small>
@@ -536,7 +551,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-design">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Design</small>
@@ -554,7 +569,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-design">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Design</small>
@@ -572,7 +587,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-web">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Web app</small>
@@ -591,7 +606,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-web">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Web app</small>
@@ -610,7 +625,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-web">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Web app</small>
@@ -629,7 +644,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-web">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Web app</small>
@@ -648,7 +663,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-web">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Web app</small>
@@ -667,7 +682,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-web">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Web app</small>
@@ -681,7 +696,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-web">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Web app</small>
@@ -695,7 +710,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-software">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-software">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Software</small>
@@ -709,7 +724,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-design">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Design</small>
@@ -727,7 +742,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-design">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Design</small>
@@ -745,7 +760,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-design">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
               <div class="projects-thumb">
                 <div class="projects-info">
                   <small class="projects-tag">Design</small>
@@ -763,24 +778,23 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch col-12 project-design">
-              <div class="projects-thumb">
-                <div class="projects-info">
-                  <small class="projects-tag">Design</small>
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
+                <div class="projects-thumb">
+                  <div class="projects-info">
+                    <small class="projects-tag">Design</small>
 
-                  <h5 class="projects-title">Architectural poster 1</h5>
+                    <h5 class="projects-title">Architectural poster 1</h5>
+                  </div>
+
+                  <a href="../assets/images/projects/abo-d-001/main_full.png"
+                     class="venobox"
+                     data-gall="portfolioGallery"
+                     title="Project info"
+                  >
+                    <img src="../assets/images/projects/abo-d-001/main.png" class="projects-image img-fluid" alt="">
+                  </a>
                 </div>
-
-                <a href="../assets/images/projects/abo-d-001/main_full.png"
-                   class="venobox"
-                   data-gall="portfolioGallery"
-                   title="Project info"
-                >
-                  <img src="../assets/images/projects/abo-d-001/main.png" class="projects-image img-fluid" alt="">
-                </a>
               </div>
-            </div>
-
           </div>
         </div>
       </section>
@@ -912,6 +926,7 @@
     <script src="../assets/js/magnific-popup-options.js"></script>
     <script src="../assets/vendor/venobox/venobox.min.js"></script>
     <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
     <script src="../assets/js/custom.js"></script>
 

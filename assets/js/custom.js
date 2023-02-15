@@ -81,4 +81,25 @@
   };
   includeHTML()
 
+  // Portfolio isotope and filter
+  $(window).on('load', function() {
+    const portfolioIsotope = $('#projects-container').isotope({
+      itemSelector: '.project-item'
+    });
+
+    $('#portfolio-filters li').on('click', function() {
+      $("#portfolio-filters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+    });
+
+    // Initiate venobox (lightbox feature used in portfolio)
+    $('.venobox').venobox({
+      'share': false
+    });
+  });
+
 })(window.jQuery);
