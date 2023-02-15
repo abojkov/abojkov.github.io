@@ -1098,7 +1098,7 @@ h5,
 }
 
 .vbox-content img {
-  height: 93vh;
+  max-height: 93vh;
 }
 
 /*---------------------------------------
