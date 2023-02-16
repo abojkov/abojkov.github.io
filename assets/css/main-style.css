@@ -681,6 +681,11 @@ h5:not(.services-thumb h5, .projects-thumb h5),
   height: 100%;
 }
 
+.services-thumb .content {
+  position: relative;
+  z-index: 100;
+}
+
 .services-thumb .content * {
   margin: 0;
 }
