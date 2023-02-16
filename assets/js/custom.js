@@ -1,34 +1,14 @@
 (function ($) {
 
-  "use strict";
+  'use strict';
 
   // PRE LOADER
   $(window).load(function () {
     $('.preloader').fadeOut(1000); // set duration in brackets
   });
 
-  // CUSTOM LINK
-  $('.custom-link').click(function () {
-    let el = $(this).attr('href');
-    let elWrapped = $(el);
-    let header_height = $('.navbar').height() + 10;
-
-    scrollToDiv(elWrapped, header_height);
-    return false;
-
-    function scrollToDiv(element, navheight) {
-      let offset = element.offset();
-      let offsetTop = offset.top;
-      let totalScroll = offsetTop - navheight;
-
-      $('body,html').animate({
-        scrollTop: totalScroll
-      }, 300);
-    }
-  });
-
-  // CLOSE MOBILE NAVIGATION ON LINK CLICK
-  $('.nav-link').click(() => {
+  // Close mobile menu navigation on item click
+  $('.nav-link').on('click', () => {
     let width = Math.max(window.screen.width, window.innerWidth);
     let shouldHideMenuItems = width <= 991;
     if (shouldHideMenuItems) {
@@ -44,7 +24,7 @@
   });
 
   // Portfolio details carousel
-  $(".owl-carousel").owlCarousel({
+  $('.owl-carousel').owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
@@ -53,33 +33,32 @@
 
   // Include html functionality from W3Schools
   function includeHTML() {
-    var z, i, elmnt, file, xhttp;
+    let z, i, elmnt, file, xhttp;
     /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
+    z = document.getElementsByTagName('*');
     for (i = 0; i < z.length; i++) {
       elmnt = z[i];
       /*search for elements with a certain attribute:*/
-      file = elmnt.getAttribute("data-htmlinclude");
+      file = elmnt.getAttribute('data-htmlinclude');
       if (file) {
         /*make an HTTP request using the attribute value as the file name:*/
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState === 4) {
             if (this.status === 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status === 404) {elmnt.innerHTML = "Page not found.";}
+            if (this.status === 404) {elmnt.innerHTML = 'Page not found.';}
             /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("data-htmlinclude");
+            elmnt.removeAttribute('data-htmlinclude');
             includeHTML();
           }
         }
-        xhttp.open("GET", file, true);
+        xhttp.open('GET', file, true);
         xhttp.send();
         /*exit the function:*/
         return;
       }
     }
-  };
-  includeHTML()
+  }
 
   // Portfolio isotope and filter
   $(window).on('load', function() {
@@ -88,7 +67,7 @@
     });
 
     $('#portfolio-filters li').on('click', function() {
-      $("#portfolio-filters li").removeClass('filter-active');
+      $('#portfolio-filters li').removeClass('filter-active');
       $(this).addClass('filter-active');
 
       portfolioIsotope.isotope({
@@ -101,5 +80,22 @@
       'share': false
     });
   });
+
+  // This is commented because this does not work when the expandable cards are imported with data-htmlinclude.
+  // This is implemented locally on every expandable card. A solution has to be found for this.
+  // // Expandable card interaction
+  // $('.expandable-card-title')
+  //   .on('click', function() {
+  //     $(this).next().slideToggle();
+  //   })
+  //   .on('mouseover', function() {
+  //     $(this).css('font-weight', 'bold');
+  //   })
+  //   .on('mouseleave', function() {
+  //     $(this).css('font-weight', 'normal');
+  //   })
+
+  // Should be last
+  includeHTML()
 
 })(window.jQuery);
