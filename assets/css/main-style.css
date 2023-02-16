@@ -1173,6 +1173,11 @@ h5:not(.services-thumb h5, .projects-thumb h5),
   font-size: 16px;
 }
 
+/* Do not stretch list items */
+.expandable-card-content li {
+  text-align: left;
+}
+
 .expandable-card-content a {
   text-decoration: underline;
 }
