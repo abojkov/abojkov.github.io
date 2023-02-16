@@ -8,8 +8,9 @@ $.each(sectionArray, function (index, value) {
     let docScroll = $(document).scrollTop();
     let docScroll1 = docScroll + 1;
 
+    let isBottomOfPage = (window.innerHeight + window.scrollY) >= document.body.scrollHeight - 100;
 
-    if (docScroll1 >= offsetSection) {
+    if ((docScroll1 >= offsetSection) || isBottomOfPage) {
       $('.navbar-nav .nav-item .nav-link').removeClass('active');
       $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');
       $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');

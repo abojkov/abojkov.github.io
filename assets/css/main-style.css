@@ -10,6 +10,7 @@
   --p-color:                      #717275;
   --border-color:                 #e9eaeb;
   --featured-border-color:        #727aab;
+  --warning-color:                #ff4d4d;
 
   --body-font-family:             'DM Sans', sans-serif;
 
@@ -188,10 +189,10 @@ strong {
   left: 50%;
   width: 45px;
   height: 45px;
-  margin-top: -10px;
-  margin-left: -10px;
+  margin-top: -22px;
+  margin-left: -22px;
   border-radius: 50%;
-  border: 3px solid var(--primary-color);
+  border: 5px solid var(--primary-color);
   border-top-color: var(--white-color);
   animation: spinner .9s linear infinite;
 }
@@ -282,6 +283,29 @@ strong {
 .custom-link:hover {
   background-color: var(--secondary-color);
 }
+
+/*---------------------------------------
+  CUSTOM ALERT DESIGN
+-----------------------------------------*/
+.aby-alert {
+  padding: 15px;
+  background-color: #f44336;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.aby-alert, .aby-alert * {
+  color: var(--white-color) !important;
+}
+
+.aby-alert i {
+  margin-right: 10px;
+}
+
+.aby-alert.success {background-color: #04AA6D;}
+.aby-alert.info {background-color: #2196F3;}
+.aby-alert.warning {background-color: #ff9800;}
 
 /*---------------------------------------
   GLOBAL
@@ -488,7 +512,9 @@ strong {
 }
 
 .hero-title,
-.hero h2, h5 {
+.hero h2,
+h5:not(.services-thumb h5, .projects-thumb h5),
+.portfolio-title {
   color: var(--secondary-color);
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
@@ -650,23 +676,12 @@ strong {
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
-  margin-bottom: 24px;
-  padding: 40px 40px 50px 40px;
+  padding: 40px;
   transition: all 0.5s;
+  height: 100%;
 }
 
-.services-thumb-up {
-  position: relative;
-  bottom: 50px;
-  margin-bottom: -50px;
-}
-
-.services-thumb-up .content {
-  position: relative;
-  z-index: 99;
-}
-
-.services-thumb-up .content * {
+.services-thumb .content * {
   margin: 0;
 }
 
@@ -773,6 +788,7 @@ strong {
   width: 100%;
   transform: rotate(10deg) translateY(80px);
   transition: all ease 0.5s;
+  border: 1px solid var(--secondary-color);
 }
 
 .projects-title {
@@ -787,6 +803,81 @@ strong {
   margin-bottom: 5px;
 }
 
+.portfolio-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-info {
+  padding-top: 62px;
+}
+
+.portfolio-details .portfolio-info * {
+  color: var(--dark-color)
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-info p {
+  font-size: 15px;
+  padding: 0;
+  text-align: justify;
+}
+
+.portfolio-details .portfolio-info a {
+  color: var(--primary-color)
+}
+
+.portfolio-details .portfolio-info a:hover {
+  color: var(--secondary-color)
+}
+
+#portfolio-filters {
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+#portfolio-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolio-filters li:hover, #portfolio-filters li.filter-active {
+  color: var(--secondary-color);
+  border-bottom: var(--secondary-color) 0.01em solid;
+}
+
+#portfolio-filters .filter-special:hover, #portfolio-filters .filter-special.filter-active {
+  color: var(--warning-color);
+  border-bottom: var(--warning-color) 0.01em solid;
+}
 
 /*---------------------------------------
   CONTACT              
@@ -972,6 +1063,20 @@ strong {
   color: var(--white-color);
 }
 
+/*---------------------------------------
+  ERROR PAGE
+-----------------------------------------*/
+.error-page p {
+  color: var(--white-color);
+}
+
+.error-page p a {
+  color: var(--primary-color);
+}
+
+.error-page img {
+  width: 200px;
+}
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -1007,6 +1112,37 @@ strong {
   color: var(--white-color);
 }
 
+/*---------------------------------------
+  VENOBOX
+-----------------------------------------*/
+.venoratio {
+  width: 70%;
+}
+
+.vbox-content img {
+  max-height: 93vh;
+}
+
+/*---------------------------------------
+  CAROUSEL
+-----------------------------------------*/
+.portfolio-details .owl-carousel .owl-nav, .portfolio-details .owl-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.portfolio-details .owl-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.portfolio-details .owl-carousel .owl-dot.active {
+  background-color: var(--primary-color) !important;
+}
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1054,6 +1190,10 @@ strong {
     font-size: 20px;
   }
 
+  .services-thumb h5, .projects-thumb h5 {
+    font-size: 24px;
+  }
+
   h6 {
     font-size: 18px;
   }
@@ -1071,6 +1211,10 @@ strong {
 
   .navbar .container {
     background: var(--white-color);
+  }
+
+  .navbar-brand {
+    margin-right: 10px !important;
   }
 
   .navbar-brand,
@@ -1126,14 +1270,9 @@ strong {
     font-size: 42px;
   }
 
-  .services-thumb-up {
-    bottom: 0;
-    margin-bottom: 32px;
-  }
-
   .services-thumb {
-    margin-bottom: 32px;
-    padding-bottom: 270px;
+    margin-bottom: 0;
+    padding-bottom: 100px;
   }
 
   .services-icon-wrap {
@@ -1161,6 +1300,11 @@ strong {
     border-bottom: 1px solid var(--border-color);
     border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
   }
+
+  .error-page .img-wrapper {
+    margin-top: -50px;
+    margin-bottom: 100px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1183,6 +1327,11 @@ strong {
   .hero-title {
     width: 100%;
     font-size: max(8.3vw, 5px);
+  }
+
+  .portfolio-title {
+    width: 100%;
+    text-align: center;
   }
 
   .hero h5 {
@@ -1239,6 +1388,11 @@ strong {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+  .venoratio {
+    width: 100%;
+    height: 70vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1284,4 +1438,3 @@ strong {
     min-width: inherit;
   }
 }
-

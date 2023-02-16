@@ -22,6 +22,9 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/bootstrap-icons.css" rel="stylesheet">
     <link href="../assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
     <link href="../assets/css/main-style.css" rel="stylesheet">
   </head>
 
@@ -218,7 +221,7 @@
                   <div class="col-lg-6 col-6 featured-border-start featured-border-bottom ps-5 py-2">
                     <strong class="featured-numbers">30+</strong>
 
-                    <p class="featured-text">Project Finished</p>
+                    <p class="featured-text">Projects Finished</p>
                   </div>
 
                   <div class="col-lg-12 col-12 pt-4 text-center">
@@ -245,11 +248,14 @@
                 <h3 class="text-white ms-4 mb-0">Skills</h3>
               </div>
 
-              <div class="row pt-lg-5">
+              <div class="row pt-lg-2 gy-5">
+
+                <!-- Services -->
+
                 <div class="col-md-4 col-12 align-items-stretch">
-                  <div class="services-thumb services-thumb-up">
+                  <div class="services-thumb">
                     <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                      <h3 class="mb-0">Frontend</h3>
+                      <h5 class="mb-0">Frontend</h5>
                     </div>
 
                     <div class="content">
@@ -265,15 +271,15 @@
                     </div>
 
                     <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                      <i class="skill-icon fab fa-html5"></i>
+                      <i class="skill-icon fab fa-react"></i>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-4 col-12 align-items-stretch">
-                  <div class="services-thumb services-thumb-up">
+                  <div class="services-thumb">
                     <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                      <h3 class="mb-0">Backend</h3>
+                      <h5 class="mb-0">Backend</h5>
                     </div>
 
                     <div class="content">
@@ -286,31 +292,70 @@
                     </div>
 
                     <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                      <i class="skill-icon fab fa-html5"></i>
+                      <i class="skill-icon fab fa-java"></i>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-4 col-12 align-items-stretch">
-                  <div class="services-thumb services-thumb-up">
+                  <div class="services-thumb">
                     <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                      <h3 class="mb-0">Frontend</h3>
+                      <h5 class="mb-0">Database Mgmt. Systems</h5>
                     </div>
 
                     <div class="content">
-                      <p><strong>HTML, CSS</strong></p>
-                      <p>Twitter Bootstrap</p>
-                      <p>Font Awesome</p>
-                      <p><strong>JavaScript, TypeScript</strong></p>
-                      <p><strong>React.js</strong></p>
-                      <p>Material Design (MUI)</p>
-                      <p>Hooks 16.8+</p>
-                      <p><strong>Vue.js</strong></p>
-                      <p>PrimeVue</p>
+                      <p><strong>SQL Relational Database</strong></p>
+                      <p>PostgreSQL</p>
+                      <p>MySQL</p>
+                      <p><strong>NoSQL Database</strong></p>
+                      <p>MongoDB</p>
+                      <p><strong>GraphQL & Hasura</strong></p>
                     </div>
 
                     <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                      <i class="skill-icon fab fa-html5"></i>
+                      <i class="skill-icon fas fa-database"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-12 align-items-stretch">
+                  <div class="services-thumb">
+                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                      <h5 class="mb-0">Git Workflow</h5>
+                    </div>
+
+                    <div class="content">
+                      <p><strong>Monitoring Changes</strong></p>
+                      <p><strong>Repository Management</strong></p>
+                      <p><strong>Merge Conflict Resolving</strong></p>
+                      <p><strong>PR & Code Review</strong></p>
+                    </div>
+
+                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                      <i class="skill-icon fas fa-code-merge"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-12 align-items-stretch">
+                  <div class="services-thumb">
+                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                      <h5 class="mb-0">Graphics</h5>
+                    </div>
+
+                    <div class="content">
+                      <p><strong>Posters</strong></p>
+                      <p><strong>Brochures</strong></p>
+                      <p><strong>Business cards</strong></p>
+                      <p><strong>Restaurant menus</strong></p>
+                      <p><strong>Covers</strong></p>
+                      <p><strong>Logos</strong></p>
+                      <p><strong>Banners</strong></p>
+                      <p><strong>Graphic Ads</strong></p>
+                    </div>
+
+                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                      <i class="skill-icon fas fa-eye-dropper"></i>
                     </div>
                   </div>
                 </div>
@@ -324,8 +369,9 @@
 
       <section class="projects section-padding" id="section_4">
         <div class="container">
-          <div class="row">
 
+          <!-- Title -->
+          <div class="row">
             <div class="col-lg-12 col-md-8 col-12 ms-auto">
               <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
 
@@ -335,51 +381,420 @@
 
               </div>
             </div>
+          </div>
 
-            <div class="clearfix"></div>
+          <!-- Filter -->
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+              <ul id="portfolio-filters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".project-web" class="">Web Apps</li>
+                <li data-filter=".project-android" class="">Android Apps</li>
+                <li data-filter=".project-software" class="">Software</li>
+                <li data-filter=".project-design">Design</li>
+                <li class="filter-special" data-filter=".project-external">External</li>
+              </ul>
+            </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
+          <!-- Projects -->
+          <div class="row" id="projects-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-android">
               <div class="projects-thumb">
                 <div class="projects-info">
-                  <small class="projects-tag">Web app</small>
+                  <small class="projects-tag">Android app</small>
 
-                  <h3 class="projects-title">Book shop</h3>
+                  <h5 class="projects-title">Fuel Calculator</h5>
                 </div>
 
-                <a href="../assets/images/projects/project-1.jpg" class="popup-image">
-                  <img src="../assets/images/projects/project-1.jpg" class="projects-image img-fluid" alt="">
+                <a href="./projects/abo-a-007.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-a-007/main.png" class="projects-image img-fluid" alt="">
                 </a>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-android project-external">
               <div class="projects-thumb">
                 <div class="projects-info">
-                  <small class="projects-tag">Web app</small>
+                  <small class="projects-tag">Android app</small>
 
-                  <h3 class="projects-title">Book shop</h3>
+                  <h5 class="projects-title">WashMaster Terminal App</h5>
                 </div>
 
-                <a href="../assets/images/projects/project-1.jpg" class="popup-image">
-                  <img src="../assets/images/projects/project-1.jpg" class="projects-image img-fluid" alt="">
+                <a href="./projects/abo-a-005.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-a-005/main.png" class="projects-image img-fluid" alt="">
                 </a>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
               <div class="projects-thumb">
                 <div class="projects-info">
-                  <small class="projects-tag">Web app</small>
+                  <small class="projects-tag">Design</small>
 
-                  <h3 class="projects-title">Book shop</h3>
+                  <h5 class="projects-title">StaroNovo Mobile Design</h5>
                 </div>
 
-                <a href="../assets/images/projects/project-1.jpg" class="popup-image">
-                  <img src="../assets/images/projects/project-1.jpg" class="projects-image img-fluid" alt="">
+                <a href="./projects/abo-d-008.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-d-008/main.png" class="projects-image img-fluid" alt="">
                 </a>
               </div>
             </div>
 
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-android">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Android app</small>
+
+                  <h5 class="projects-title">Movie searcher</h5>
+                </div>
+
+                <a href="./projects/abo-a-004.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-a-004/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Design</small>
+
+                  <h5 class="projects-title">Architectural poster 6</h5>
+                </div>
+
+                <a href="../assets/images/projects/abo-d-007/main_full.png"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-d-007/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Web app</small>
+
+                  <h5 class="projects-title">StaroNovo</h5>
+                </div>
+
+                <a href="./projects/abo-w-008.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-w-008/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-android project-external">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Android app</small>
+
+                  <h5 class="projects-title">Pulse.eco</h5>
+                </div>
+
+                <a href="./projects/abo-a-002.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-a-002/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-android">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Android app</small>
+
+                  <h5 class="projects-title">CovidApp Stats</h5>
+                </div>
+
+                <a href="./projects/abo-a-001.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-a-001/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Design</small>
+
+                  <h5 class="projects-title">Architectural poster 5</h5>
+                </div>
+
+                <a href="../assets/images/projects/abo-d-006/main_full.png"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-d-006/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Design</small>
+
+                  <h5 class="projects-title">Architectural poster 4</h5>
+                </div>
+
+                <a href="../assets/images/projects/abo-d-005/main_full.png"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-d-005/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Web app</small>
+
+                  <h5 class="projects-title">Busko</h5>
+                </div>
+
+                <a href="./projects/abo-w-007.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-w-007/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Web app</small>
+
+                  <h5 class="projects-title">rAdio</h5>
+                </div>
+
+                <a href="./projects/abo-w-006.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-w-006/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Web app</small>
+
+                  <h5 class="projects-title">Book eShop</h5>
+                </div>
+
+                <a href="./projects/abo-w-005.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-w-005/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Web app</small>
+
+                  <h5 class="projects-title">TvojTermin</h5>
+                </div>
+
+                <a href="./projects/abo-w-004.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-w-004/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Web app</small>
+
+                  <h5 class="projects-title">FINKI eSystem</h5>
+                </div>
+
+                <a href="./projects/abo-w-003.html"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   data-vbtype="iframe"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-w-003/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Web app</small>
+
+                  <h5 class="projects-title">High School Website 2</h5>
+                </div>
+
+                <a href="https://4-1klas.weebly.com/" target="_blank">
+                  <img src="../assets/images/projects/abo-w-002/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-web">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Web app</small>
+
+                  <h5 class="projects-title">High School Website 1</h5>
+                </div>
+
+                <a href="https://3-1klas.weebly.com/" target="_blank">
+                  <img src="../assets/images/projects/abo-w-001/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-software">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Software</small>
+
+                  <h5 class="projects-title">Café/Bar/Restaurant Software</h5>
+                </div>
+
+                <a href="https://github.com/abojkov/VP_Proekt_2019" target="_blank">
+                  <img src="../assets/images/projects/abo-s-001/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Design</small>
+
+                  <h5 class="projects-title">Architectural poster 3</h5>
+                </div>
+
+                <a href="../assets/images/projects/abo-d-004/main_full.png"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-d-004/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Design</small>
+
+                  <h5 class="projects-title">Business card</h5>
+                </div>
+
+                <a href="../assets/images/projects/abo-d-003/main_full.png"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-d-003/main_full.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
+              <div class="projects-thumb">
+                <div class="projects-info">
+                  <small class="projects-tag">Design</small>
+
+                  <h5 class="projects-title">Architectural poster 2</h5>
+                </div>
+
+                <a href="../assets/images/projects/abo-d-002/main_full.png"
+                   class="venobox"
+                   data-gall="portfolioGallery"
+                   title="Project info"
+                >
+                  <img src="../assets/images/projects/abo-d-002/main.png" class="projects-image img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch col-12 project-item project-design">
+                <div class="projects-thumb">
+                  <div class="projects-info">
+                    <small class="projects-tag">Design</small>
+
+                    <h5 class="projects-title">Architectural poster 1</h5>
+                  </div>
+
+                  <a href="../assets/images/projects/abo-d-001/main_full.png"
+                     class="venobox"
+                     data-gall="portfolioGallery"
+                     title="Project info"
+                  >
+                    <img src="../assets/images/projects/abo-d-001/main.png" class="projects-image img-fluid" alt="">
+                  </a>
+                </div>
+              </div>
           </div>
         </div>
       </section>
@@ -509,6 +924,10 @@
     <script src="../assets/js/click-scroll.js"></script>
     <script src="../assets/js/jquery.magnific-popup.min.js"></script>
     <script src="../assets/js/magnific-popup-options.js"></script>
+    <script src="../assets/vendor/venobox/venobox.min.js"></script>
+    <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
     <script src="../assets/js/custom.js"></script>
 
   </body>
