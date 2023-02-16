@@ -79,7 +79,6 @@
       }
     }
   };
-  includeHTML()
 
   // Portfolio isotope and filter
   $(window).on('load', function() {
@@ -101,5 +100,22 @@
       'share': false
     });
   });
+
+  // This is commented because this does not work when the expandable cards are imported with data-htmlinclude.
+  // This is implemented locally on every expandable card. A solution has to be found for this.
+  // // Expandable card interaction
+  // $('.expandable-card-title')
+  //   .on('click', function() {
+  //     $(this).next().slideToggle();
+  //   })
+  //   .on('mouseover', function() {
+  //     $(this).css('font-weight', 'bold');
+  //   })
+  //   .on('mouseleave', function() {
+  //     $(this).css('font-weight', 'normal');
+  //   })
+
+  // Should be last
+  includeHTML()
 
 })(window.jQuery);

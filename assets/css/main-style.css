@@ -299,7 +299,7 @@ strong {
   color: var(--white-color) !important;
 }
 
-.aby-alert i {
+.aby-alert .fa, .aby-alert .fas, .aby-alert .fab {
   margin-right: 10px;
 }
 
@@ -1147,6 +1147,38 @@ h5:not(.services-thumb h5, .projects-thumb h5),
 
 .portfolio-details .owl-carousel .owl-dot.active {
   background-color: var(--primary-color) !important;
+}
+
+/*---------------------------------------
+  EXPANDABLE CARD
+-----------------------------------------*/
+.expandable-card-title {
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.expandable-card-title .right {
+  float: right;
+}
+
+.expandable-card-content {
+  display: none;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.expandable-card-content * {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.expandable-card-content a {
+  text-decoration: underline;
+}
+
+.expandable-card-content a:hover {
+  color: lightgray !important;
 }
 
 /*---------------------------------------
