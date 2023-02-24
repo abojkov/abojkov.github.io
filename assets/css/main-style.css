@@ -1048,6 +1048,11 @@ h5:not(.services-thumb h5, .projects-thumb h5),
   vertical-align: top;
 }
 
+.footer-menu-item span {
+  touch-action: manipulation;
+  transition: all 0.3s;
+}
+
 .footer-menu-link {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-medium);
