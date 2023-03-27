@@ -829,6 +829,10 @@ h5:not(.services-thumb h5, .projects-thumb h5),
   padding-top: 62px;
 }
 
+.portfolio-details .portfolio-info .disabled-link, .portfolio-details .portfolio-info .disabled-link:hover {
+  color: gray;
+}
+
 .portfolio-details .portfolio-info * {
   color: var(--dark-color)
 }
