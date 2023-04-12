@@ -807,10 +807,6 @@ h5:not(.services-thumb h5, .projects-thumb h5),
   border: 1px solid var(--secondary-color);
 }
 
-.no-border {
-  border: 0;
-}
-
 .projects-title {
   margin-bottom: 20px;
 }
