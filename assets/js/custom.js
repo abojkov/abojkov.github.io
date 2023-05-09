@@ -3,9 +3,12 @@
   'use strict';
 
   // PRE LOADER
-  $(window).load(function () {
-    $('.preloader').fadeOut(1000); // set duration in brackets
-  });
+  $('.hero-image').load(setTimeout(function () {
+    $('.preloader').fadeOut(500); // set duration in brackets
+  }, 1000));
+
+  // Blurry images
+
 
   // Close mobile menu navigation on item click
   $('.nav-link').on('click', () => {
