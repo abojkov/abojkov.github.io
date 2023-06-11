@@ -1500,3 +1500,23 @@ h5:not(.services-thumb h5, .projects-thumb h5),
     min-width: inherit;
   }
 }
+
+/*--------------------------------------------------------------
+# Temporary rainbow design
+--------------------------------------------------------------*/
+/* Only add the element as a first child in .site-footer */
+#rainbow {
+  background: linear-gradient(90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 16.66%,
+    rgba(255, 255, 0, 1) 33.32%,
+    rgba(79, 220, 74, 1) 50%,
+    rgba(28, 127, 238, 1) 66.66%,
+    rgba(138,43,226, 1) 90.3%
+  );
+  height: 7px;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
