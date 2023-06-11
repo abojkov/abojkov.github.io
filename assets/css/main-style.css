@@ -524,7 +524,9 @@ h5:not(.services-thumb h5, .projects-thumb h5),
 }
 
 .hero-title {
-	font-size: 44px;
+  font-size: 44px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .hero h2 {
