@@ -594,7 +594,11 @@ h5:not(.services-thumb h5, .projects-thumb h5),
 
 .profile-title {
   border-bottom: 1px solid var(--border-color);
-  padding: 15px 30px;
+  padding: 15px 20px;
+}
+
+.profile-title * {
+  color: var(--secondary-color);
 }
 
 .profile-small-title {
