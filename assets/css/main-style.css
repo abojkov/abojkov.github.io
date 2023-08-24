@@ -1508,7 +1508,7 @@ h5:not(.services-thumb h5, .projects-thumb h5),
 /*--------------------------------------------------------------
 # Temporary rainbow design
 --------------------------------------------------------------*/
-/* Only add the class to the element that has .site-footer */
+/* Only append the class to the element that has .site-footer */
 .rainbow {
   border-top: 5px solid red;
   border-image: linear-gradient(90deg,
