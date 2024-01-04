@@ -59,9 +59,7 @@
 
         <div class="d-flex align-items-center d-lg-none">
           <i class="navbar-icon bi-telephone-plus me-3"></i>
-          <a class="custom-btn btn" href="tel: +4915212511427">
-            +49 152 12511427
-          </a>
+          <a class="mutable-contact-number custom-btn btn" href="tel: +4915212511427"></a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -89,9 +87,7 @@
 
           <div class="d-lg-flex align-items-center d-none ms-auto">
             <i class="navbar-icon bi-telephone-plus me-3"></i>
-            <a class="custom-btn btn" href="tel: +4915212511427">
-              +49 152 12511427
-            </a>
+            <a class="mutable-contact-number custom-btn btn" ></a>
           </div>
         </div>
 
@@ -210,7 +206,7 @@
 
                   <p>
                     <span class="profile-small-title">Phone</span>
-                    <span><a href="tel: +4915212511427">+49 152 12511427</a></span>
+                    <span><a class="mutable-contact-number" ></a></span>
                   </p>
 
                   <p>
@@ -962,7 +958,7 @@
 
                 <ul class="footer-menu">
                   <li class="footer-menu-item">
-                    <span class="footer-menu-link">Frankfurt am Main, Germany</span>
+                    <span id='mutable-location' class="footer-menu-link"></span>
                   </li>
                 </ul>
 
@@ -984,11 +980,9 @@
                 <ul class="footer-menu">
                   <li class="footer-menu-item">
                     <a
-                        class="footer-menu-link"
+                        class="mutable-contact-number footer-menu-link"
                         href="tel: +4915212511427"
-                    >
-                      +49 152 12511427
-                    </a>
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -1041,5 +1035,89 @@
 
     <script src="../assets/js/custom.js"></script>
 
+    <script>
+      $(document).ready(function() {
+        const getIp = async () => {
+          return $.ajax({
+            type: 'GET',
+            url: 'https://api.ipify.org/?format=json'
+          })
+        }
+
+        const getGeoLoc = async (ip) => {
+          return $.ajax({
+            type: 'GET',
+            url: `https://ipapi.co/${ip}/json`
+          })
+        }
+
+        const getInfo = (iso) => {
+          const info = {
+            de: {
+              location: 'Frankfurt am Main, Germany',
+              number: '+49 152 125 11427'
+            },
+            bg: {
+              location: 'Sofia, Bulgaria',
+              number: '+359 88 679 2143'
+            },
+            gr: {
+              location: 'Thessaloniki, Greece',
+              number: '+30 697 354 7848'
+            },
+            mk: {
+              location: 'Skopje, North Macedonia',
+              number: '+389 79 230 553'
+            },
+            us: {
+              location: 'Miami, FL, USA',
+              number: '+1 786 412 7817'
+            },
+          }
+
+          console.log(iso)
+
+          switch (iso) {
+            case 'deu':
+              return info.de
+            case 'bgr':
+              return info.bg
+            case 'grc':
+              return info.gr
+            case 'mkd':
+              return info.mk
+            case 'usa':
+              return info.us
+            default:
+              return info.de
+          }
+        }
+
+        getIp()
+          .then(res => {
+            const ipAddress = res.ip
+
+            getGeoLoc(ipAddress)
+              .then(res => {
+                const isoCode = res.country_code_iso3;
+
+                const info = getInfo(isoCode.toLowerCase());
+
+                $('#mutable-location').text(info.location);
+                $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
+
+                console.log(info);
+              })
+              .catch(() => {
+                console.log('error getting geolocation')
+              })
+          }).catch(() => {
+          console.log('error getting public ip address')
+
+        })
+
+      })
+
+    </script>
   </body>
 </html>
