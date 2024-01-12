@@ -1,11 +1,10 @@
 (function ($) {
 
-  'use strict';
-
+  // This is moved to the index.html for faster loading
   // PRE LOADER
-  $('.hero-image').load(setTimeout(function () {
-    $('.preloader').fadeOut(500); // set duration in brackets
-  }, 1000));
+  // $('.hero-image').load(setTimeout(function () {
+  //   $('.preloader').fadeOut(500); // set duration in brackets
+  // }, 1000));
 
   // Blurry images
 
