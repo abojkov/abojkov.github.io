@@ -1021,6 +1021,15 @@
 
     <!-- JAVASCRIPT FILES -->
     <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.waitforimages.min.js"></script>
+    <script>
+      (function ($) {
+        // PRE LOADER
+        $('.navbar-brand').waitForImages(setTimeout(function () {
+          $('.preloader').fadeOut(500); // set duration in brackets
+        }), 1000);
+      })(window.jQuery);
+    </script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/jquery.sticky.js"></script>
     <script src="../assets/js/click-scroll.js"></script>
