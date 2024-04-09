@@ -1043,25 +1043,25 @@
 
     <script>
       $(document).ready(function() {
-        const getIp = async () => {
-          return $.ajax({
-            type: 'GET',
-            url: 'https://api.ipify.org/?format=json'
-          })
-        }
+        // const getIp = async () => {
+        //   return $.ajax({
+        //     type: 'GET',
+        //     url: 'https://api.ipify.org/?format=json'
+        //   })
+        // }
 
-        const getGeoLoc = async (ip) => {
-          return $.ajax({
-            type: 'GET',
-            url: `https://ipapi.co/${ip}/json`
-          })
-        }
+        // const getGeoLoc = async (ip) => {
+        //   return $.ajax({
+        //     type: 'GET',
+        //     url: `https://ipapi.co/${ip}/json`
+        //   })
+        // }
 
         const getInfo = (iso) => {
           const info = {
             de: {
-              location: 'Frankfurt am Main, Germany',
-              number: '+49 152 125 11427'
+              location: 'Karlsruhe, Baden-Württemberg, Germany',
+              number: '+49 152 137 14956'
             },
             bg: {
               location: 'Sofia, Bulgaria',
@@ -1076,37 +1076,41 @@
           switch (iso) {
             case 'deu':
               return info.de
-            case 'bgr':
-              return info.bg
-            case 'usa':
-              return info.us
+            // case 'bgr':
+            //   return info.bg
+            // case 'usa':
+            //   return info.us
             default:
               return info.de
           }
         }
 
-        getIp()
-          .then(res => {
-            const ipAddress = res.ip
+        const info = getInfo('deu')
+        $('#mutable-location').text(info.location);
+        $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
 
-            getGeoLoc(ipAddress)
-              .then(res => {
-                const isoCode = res.country_code_iso3;
-
-                const info = getInfo(isoCode.toLowerCase());
-                $('#mutable-location').text(info.location);
-                $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
-              })
-              .catch(() => {
-                const info = getInfo('deu');
-                $('#mutable-location').text(info.location);
-                $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
-              })
-          }).catch(() => {
-            const info = getInfo('deu');
-            $('#mutable-location').text(info.location);
-            $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
-          })
+        // getIp()
+        //   .then(res => {
+        //     const ipAddress = res.ip
+        //
+        //     getGeoLoc(ipAddress)
+        //       .then(res => {
+        //         const isoCode = res.country_code_iso3;
+        //
+        //         const info = getInfo(isoCode.toLowerCase());
+        //         $('#mutable-location').text(info.location);
+        //         $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
+        //       })
+        //       .catch(() => {
+        //         const info = getInfo('deu');
+        //         $('#mutable-location').text(info.location);
+        //         $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
+        //       })
+        //   }).catch(() => {
+        //     const info = getInfo('deu');
+        //     $('#mutable-location').text(info.location);
+        //     $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
+        //   })
       })
     </script>
   </body>
