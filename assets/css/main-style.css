@@ -1507,12 +1507,12 @@ h5:not(.services-thumb h5, .projects-thumb h5),
 /* Testimonials CSS */
 .testimonial-content {
   max-width: 600px;
+  text-align: justify;
 }
 
 .testimonial blockquote {
-  margin: 0px 10px 0;
   background: #efefef;
-  padding: 20px 60px;
+  padding: 20px 35px;
   position: relative;
   border: none;
   border-radius: 8px;
@@ -1523,8 +1523,8 @@ h5:not(.services-thumb h5, .projects-thumb h5),
 .testimonial blockquote:after {
   content: "\201C";
   position: absolute;
-  font-size: 80px;
-  line-height: 1;
+  font-size: 60px;
+  line-height: 1.2;
   color: #757f9a;
   font-style: normal;
 }
@@ -1546,7 +1546,7 @@ h5:not(.services-thumb h5, .projects-thumb h5),
   border-left: 0 solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid #efefef;
-  margin: 0 0 0 60px;
+  margin: -20px 0 0 20px;
 }
 
 .testimonial p {
