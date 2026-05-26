@@ -1570,3 +1570,15 @@ h5:not(.services-thumb h5, .projects-thumb h5),
     rgba(138,43,226, 1) 90.3%
   ) 1 0 0 0;
 }
+
+/* To disable, only add 'style="display: none;"' to the element with .rainbow-floating */
+.rainbow-floating {
+  position: fixed;
+  bottom: 90px;
+  left: 30px;
+
+  width: 90px;
+  height: auto;
+
+  z-index: 9999;
+ }
