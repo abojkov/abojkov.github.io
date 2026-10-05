@@ -1279,12 +1279,16 @@ h5:not(.services-thumb h5, .projects-thumb h5),
   }
 
   .navbar-brand {
-    margin-right: 10px !important;
+    margin-right: 12px !important;
   }
 
   .navbar-brand,
   .navbar-brand:hover {
     color: var(--dark-color);
+  }
+
+  .navbar-toggler {
+    margin-left: 12px;
   }
 
   .navbar-icon {
