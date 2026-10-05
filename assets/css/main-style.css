@@ -11,6 +11,7 @@
   --border-color:                 #e9eaeb;
   --featured-border-color:        #727aab;
   --warning-color:                #ff4d4d;
+  --hero-gradient:                linear-gradient(160deg, #a8c8f0 0%, #82AAE3 35%, #6275b5 70%, #535da1 100%);
 
   --body-font-family:             'DM Sans', sans-serif;
 
@@ -498,11 +499,35 @@ strong {
   HERO              
 -----------------------------------------*/
 .hero {
-  background: var(--secondary-color);
+  background: var(--hero-gradient);
   position: relative;
   overflow: hidden;
   padding-top: 330px;
   padding-bottom: 330px;
+}
+
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero::before {
+  top: -20%;
+  right: -8%;
+  width: min(480px, 55vw);
+  height: min(480px, 55vw);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.14) 0%, transparent 70%);
+}
+
+.hero::after {
+  bottom: 5%;
+  left: -10%;
+  width: min(360px, 45vw);
+  height: min(360px, 45vw);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
 }
 
 @media  screen and (min-width: 991px) {
@@ -575,6 +600,10 @@ h5:not(.services-thumb h5, .projects-thumb h5),
   overflow: hidden;
   height: 100%;
   pointer-events: none;
+}
+
+.hero svg path {
+  fill: var(--primary-color);
 }
 
 .hero .container {
