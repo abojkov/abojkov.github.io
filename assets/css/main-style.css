@@ -1291,6 +1291,10 @@ h5:not(.services-thumb h5, .projects-thumb h5),
     margin-left: 12px;
   }
 
+  .navbar-collapse .navbar-nav {
+    padding-left: 12px;
+  }
+
   .navbar-icon {
     background: var(--secondary-color);
     color: var(--white-color);
