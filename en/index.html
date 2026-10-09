@@ -27,7 +27,7 @@
 
     <!-- CSS, JS FILES -->
     <script src="https://kit.fontawesome.com/80621d8870.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/bootstrap-icons.css" rel="stylesheet">
     <link href="../assets/css/magnific-popup.css" rel="stylesheet">
@@ -81,8 +81,10 @@
           </ul>
 
           <div class="d-lg-flex align-items-center d-none ms-auto">
-            <i class="navbar-icon bi-telephone-plus me-3"></i>
-            <a class="mutable-contact-number custom-btn btn" >{phoneNumber}</a>
+            <a class="custom-btn btn navbar-phone-link" href="tel:+4915213714956">
+              <i class="bi-telephone-plus me-2"></i>
+              <span class="mutable-contact-number">{phoneNumber}</span>
+            </a>
           </div>
         </div>
 
@@ -91,364 +93,265 @@
 
     <main>
 
-      <section class="hero d-flex justify-content-center align-items-center" id="section_1">
+      <section class="hero modern-hero" id="section_1">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 col-12">
+              <div class="hero-copy">
+                <div class="eyebrow-pill mb-4">
+                  <i class="fa-solid fa-code"></i>
+                  Software Engineer
+                </div>
+
+                <h1 class="hero-title mb-4">
+                  Building reliable web products with clean interfaces and practical engineering.
+                </h1>
+
+                <p class="hero-lead mb-4">
+                  I design and develop web applications, internal tools, and product experiences from concept to
+                  deployment with a focus on maintainability, usability, and delivery.
+                </p>
+
+                <div class="hero-actions d-flex flex-wrap gap-3">
+                  <a class="custom-btn btn custom-link" href="#section_4">
+                    <i class="fa-solid fa-folder-open me-2"></i>
+                    View portfolio
+                  </a>
+                  <a class="custom-btn btn custom-link btn-outline-light" href="#section_5">
+                    <i class="fa-solid fa-paper-plane me-2"></i>
+                    Contact me
+                  </a>
+                  <a class="custom-btn btn custom-link btn-ghost" href="../upload">
+                    <i class="fa-solid fa-upload me-2"></i>
+                    Upload documents
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-12">
+              <div class="hero-showcase">
+                <div class="hero-profile d-flex align-items-center gap-3 mb-4">
+                  <img src="../assets/images/me-img.png" class="avatar-image avatar-image-large img-fluid" alt="">
+                  <div>
+                    <strong>A. Boykov</strong>
+                    <span>Web App Developer</span>
+                  </div>
+                </div>
+
+                <a href="#section_4" class="hero-project-link">
+                  <img src="../assets/images/projects/abo-uw-001/main.png" class="hero-image img-fluid" alt="">
+                </a>
+
+                <div class="hero-project-meta">
+                  <span>Latest project</span>
+                  <strong>Garage</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about modern-section" id="section_2">
+        <div class="container">
+          <div class="row align-items-start g-5">
+            <div class="col-lg-5 col-12">
+              <div class="section-kicker">About</div>
+              <h2 class="section-heading">Product-minded engineering for practical software.</h2>
+              <p class="section-copy">
+                I specialize in web application development, combining frontend polish with backend structure. My work
+                spans customer-facing platforms, internal operations tools, mobile app support, design systems, and
+                delivery workflows.
+              </p>
+            </div>
 
             <div class="col-lg-7 col-12">
-              <div class="hero-text">
-                <div class="hero-title-wrap d-flex align-items-center mb-4">
-                  <img src="../assets/images/me-img.png" class="avatar-image avatar-image-large img-fluid" alt="">
-
-                  <h1 class="hero-title ms-3 mb-0">
-                    <i class="fas fa-hand-peace"></i>
-                    Hello from me!
-                  </h1>
-                </div>
-
-                <h5 class="mb-4">Software Engineer</h5>
-                <h5 class="mb-4">Web App Developer</h5>
-                <h5 class="mb-4">Design Architect</h5>
-
-                <p class="mt-3 mb-2">
-                  <a class="custom-btn btn custom-link" href="../upload">
-                    <i class="fa-solid fa-upload"></i>
-                    Upload Documents
-                  </a>
-                </p>
-                <p style="color: white;">Want to send files? Sure, upload your files now!</p>
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-12 position-relative">
-              <h5>Medigo - Your health, in motion</h5>
-              <a href="" target="_blank">
-                <img src="../assets/images/projects/abo-w-011/main.png" class="hero-image img-fluid" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#535da1" fill-opacity="1"
-                d="M0,160L24,160C48,160,96,160,144,138.7C192,117,240,75,288,64C336,53,384,75,432,106.7C480,139,528,181,576,208C624,235,672,245,720,240C768,235,816,213,864,186.7C912,160,960,128,1008,133.3C1056,139,1104,181,1152,202.7C1200,224,1248,224,1296,197.3C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
-        </svg>
-      </section>
-
-
-      <section class="about p-4" id="section_2">
-        <div class="container">
-          <div class="row">
-
-            <!-- Testimonials -->
-            <div class="col-sm-12 col-12 mt-5 mb-4">
-              <div class="row">
-                <!-- Testimonial 1 -->
-                <div class="col-lg-4 mb-5 testimonial-content">
-                  <div class="testimonial">
-                    <blockquote>
-                      Working with Alex was an incredible experience. His technical expertise and problem-solving skills
-                      are top-notch, and he always approaches challenges with a clear, methodical mindset. Whether it's
-                      front-end or back-end work, Alex brings innovative solutions and always ensures the project is
-                      delivered on time. His attention to detail and collaborative nature make him an asset to any team.
-                      Highly recommend!
-                    </blockquote>
-                    <div></div>
-                    <p>
-                      Maya T. - Software Engineer
-                    </p>
-                </div>
-                </div>
-                <!-- Testimonial 2 -->
-                <div class="col-lg-4 mb-5 testimonial-content">
-                  <div class="testimonial">
-                    <blockquote>
-                      Alex has been an invaluable part of our team. His ability to translate complex requirements into
-                      functional, user-friendly solutions is remarkable. He consistently delivers high-quality work
-                      while maintaining clear communication and understanding of the project goals. Alex's proactive
-                      approach and dedication to meeting deadlines have helped us drive success across multiple
-                      projects. I couldn't ask for a better developer to work with.
-                    </blockquote>
-                    <div></div>
-                    <p>
-                      David K. - Product Owner
-                    </p>
-                  </div>
-                </div>
-                <!-- Testimonial 3 -->
-                <div class="col-lg-4 mb-5 testimonial-content">
-                  <div class="testimonial">
-                    <blockquote>
-                      Fantastic to work with. Alex not only understood our needs but also brought creative and
-                      efficient solutions to the table. The project was completed ahead of schedule and the final
-                      product exceeded our expectations. His ability to communicate technical details in an
-                      easy-to-understand way made the entire process smooth and stress-free. We look forward to
-                      collaborating with him again in the future!
-                    </blockquote>
-                    <div></div>
-                    <p>
-                      Regula S., Martin R. - Customers
-                    </p>
+              <div class="row g-3">
+                <div class="col-sm-6 col-12">
+                  <div class="metric-card">
+                    <strong>9+</strong>
+                    <span>Years of Experience</span>
                   </div>
                 </div>
 
-              </div>
-            </div>
-
-            <div class="col-sm-3 col-12">
-              <img src="../assets/images/it-img-1.png" class="about-image img-fluid" alt="">
-              <img src="../assets/images/it-img-2.png" class="about-image img-fluid mt-4" alt="">
-              <img src="../assets/images/it-img-3.png" class="about-image img-fluid mt-4 mb-4" alt="">
-            </div>
-
-            <div class="col-sm-9 col-12 mt-lg-0 order-last">
-              <div class="about-thumb">
-
-                <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
-                  <h3 class="text-white me-4 mb-0">My Story</h3>
-
-                  <img src="../assets/images/me-img.png" class="avatar-image img-fluid" alt="">
+                <div class="col-sm-6 col-12">
+                  <div class="metric-card">
+                    <strong>40+</strong>
+                    <span>Projects Finished</span>
+                  </div>
                 </div>
 
-                <h3 class="pt-2 mb-3">... a little bit about me</h3>
-
-                <p style="text-align: justify;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  I am a Software Engineer specializing in Web Application Development, passionate about creating
-                  user-friendly interfaces, as well as coding them and the logic behind them. Modern design and a stable
-                  software distribution is my vision and tendency. As part of my previous experience, I also have basic
-                  knowledge of Android Mobile Development. Throughout my career, I have successfully collaborated with
-                  cross-functional teams, translating complex requirements into elegant and scalable solutions. I thrive
-                  in agile environments, adapting quickly to evolving project needs while maintaining focus on quality
-                  code and efficient development practices. Continuous learning is a driving force for me, as I
-                  constantly explore new tools and frameworks to stay up-to-date with the rapidly evolving tech
-                  landscape. I am always excited to take on new challenges and leverage my skills to make a positive
-                  impact in the world of software development. Feel free to explore my portfolio and get in touch. Let's
-                  collaborate and bring your ideas to life.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <section class="featured section-padding">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-lg-6 col-12">
-              <div class="profile-thumb">
-                <div class="profile-title">
-                  <h4 class="mb-0">Information</h4>
-                </div>
-
-                <div class="profile-body">
-                  <p>
-                    <span class="profile-small-title">Education</span>
+                <div class="col-sm-6 col-12">
+                  <div class="info-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <strong>Education</strong>
                     <span>Bachelor of Science in Information Technology</span>
-                  </p>
-
-                  <p>
-                    <span class="profile-small-title">Specialty</span>
-                    <span>Web Development</span>
-                  </p>
-
-                  <p>
-                    <span class="profile-small-title">Phone</span>
-                    <span><a class="mutable-contact-number" >{phoneNumber}</a></span>
-                  </p>
-
-                  <p>
-                    <span class="profile-small-title">Email</span>
-                    <span><a href="mailto:contact@aboykov.com">contact@aboykov.com</a></span>
-                  </p>
+                  </div>
                 </div>
+
+                <div class="col-sm-6 col-12">
+                  <div class="info-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <strong>Location</strong>
+                    <span class="mutable-location">{location}</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row feedback-row mt-5 g-3">
+            <div class="col-12">
+              <div class="section-kicker">Feedback</div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="testimonial-modern">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  Working with Alex was an incredible experience. His technical expertise and problem-solving skills
+                  are top-notch, and he always approaches challenges with a clear, methodical mindset.
+                </p>
+                <span>Maya T. - Software Engineer</span>
               </div>
             </div>
 
-            <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-              <div class="row" style="text-align: center;">
-                <div class="col-lg-6 col-6 featured-border-bottom py-2">
-                  <strong class="featured-numbers">9+</strong>
-
-                  <p class="featured-text">Years of Experience</p>
-                </div>
-
-                <div class="col-lg-6 col-6 featured-border-start featured-border-bottom py-2">
-                  <strong class="featured-numbers">40+</strong>
-
-                  <p class="featured-text">Projects Finished</p>
-                </div>
-
-                <div class="col-lg-12 col-12 pt-4 text-center">
-                  <strong class="featured-numbers">40+</strong>
-
-                  <p class="featured-text">Happy Customers</p>
-                </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="testimonial-modern">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  Alex has been an invaluable part of our team. His ability to translate complex requirements into
+                  functional, user-friendly solutions is remarkable.
+                </p>
+                <span>David K. - Product Owner</span>
               </div>
             </div>
 
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="testimonial-modern">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  Fantastic to work with. Alex not only understood our needs but also brought creative and efficient
+                  solutions to the table.
+                </p>
+                <span>Regula S., Martin R. - Customers</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="services section-padding" id="section_3">
+      <section class="services modern-section section-soft" id="section_3">
         <div class="container">
-          <div class="row">
+          <div class="section-center mb-5">
+            <div class="section-kicker">Skills</div>
+            <h2 class="section-heading">A balanced full-stack toolkit.</h2>
+          </div>
 
-            <div class="col-lg-12 col-12 mx-auto">
-              <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                <i class="section-title-icon fas fa-star"></i>
-
-                <h3 class="text-white ms-4 mb-0">Skills</h3>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="services-thumb modern-skill-card">
+                <div class="skill-card-header">
+                  <i class="skill-icon fab fa-react"></i>
+                  <h5>Frontend</h5>
+                </div>
+                <div class="skill-tags">
+                  <span>React.js</span>
+                  <span>Vue.js</span>
+                  <span>TypeScript</span>
+                  <span>Material UI</span>
+                  <span>PrimeVue</span>
+                  <span>Bootstrap</span>
+                  <span>Tailwind CSS</span>
+                </div>
               </div>
+            </div>
 
-              <div class="row pt-lg-2 gy-5">
-
-                <!-- Services -->
-
-                <div class="col-md-4 col-12 align-items-stretch">
-                  <div class="services-thumb">
-                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                      <h5 class="mb-0">Frontend</h5>
-                    </div>
-
-                    <div class="content">
-                      <p><strong>React.js</strong></p>
-                      <p>Material Design (MUI)</p>
-                      <p>Hooks 16.8+</p>
-                      <p><strong>Vue.js</strong></p>
-                      <p>PrimeVue</p>
-                      <p><strong>NPM</strong></p>
-                      <p><strong>JavaScript, TypeScript</strong></p>
-                      <p><strong>HTML, CSS</strong></p>
-                      <p>Twitter Bootstrap</p>
-                      <p>Tailwind CSS</p>
-                      <p>Font Awesome</p>
-                    </div>
-
-                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                      <i class="skill-icon fab fa-react"></i>
-                    </div>
-                  </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="services-thumb modern-skill-card">
+                <div class="skill-card-header">
+                  <i class="skill-icon fab fa-java"></i>
+                  <h5>Backend</h5>
                 </div>
-
-                <div class="col-md-4 col-12 align-items-stretch">
-                  <div class="services-thumb">
-                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                      <h5 class="mb-0">Backend</h5>
-                    </div>
-
-                    <div class="content">
-                      <p><strong>Java Spring Boot</strong></p>
-                      <p>MVC Architecture</p>
-                      <p>REST APIs</p>
-                      <p>Thymeleaf Template Engine</p>
-                      <p><strong>Maven</strong></p>
-                      <p><strong>Unit Testing</strong></p>
-                      <p><strong>Laravel (PHP)</strong></p>
-                      <p><strong>Microsoft .NET (C#)</strong></p>
-                      <p><strong>Rails (Ruby)</strong></p>
-                    </div>
-
-                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                      <i class="skill-icon fab fa-java"></i>
-                    </div>
-                  </div>
+                <div class="skill-tags">
+                  <span>Java Spring Boot</span>
+                  <span>REST APIs</span>
+                  <span>MVC</span>
+                  <span>Ruby on Rails</span>
+                  <span>Laravel</span>
+                  <span>.NET</span>
+                  <span>Unit Testing</span>
                 </div>
+              </div>
+            </div>
 
-                <div class="col-md-4 col-12 align-items-stretch">
-                  <div class="services-thumb">
-                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                      <h5 class="mb-0">Database Mgmt. Systems</h5>
-                    </div>
-
-                    <div class="content">
-                      <p><strong>SQL Relational Database</strong></p>
-                      <p>PostgreSQL</p>
-                      <p>MySQL</p>
-                      <p><strong>NoSQL Database</strong></p>
-                      <p>MongoDB</p>
-                      <p><strong>GraphQL & Hasura</strong></p>
-                    </div>
-
-                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                      <i class="skill-icon fas fa-database"></i>
-                    </div>
-                  </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="services-thumb modern-skill-card">
+                <div class="skill-card-header">
+                  <i class="skill-icon fas fa-database"></i>
+                  <h5>Data</h5>
                 </div>
-
-                <div class="col-md-4 col-12 align-items-stretch">
-                  <div class="services-thumb">
-                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                      <h5 class="mb-0">Project Management</h5>
-                    </div>
-
-                    <div class="content">
-                      <p><strong>Agile Scrum Methodology</strong></p>
-                      <p>Scrum Sprints</p>
-                      <p>Sprint Planning</p>
-                      <p>Retrospective Meetings</p>
-                      <p><strong>Kanban Board</strong></p>
-                      <p>Atlassian Jira</p>
-                      <p><strong>Feature Driven Development</strong></p>
-                      <p><strong>Guaranteed Delivery</strong></p>
-                    </div>
-
-                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                      <i class="skill-icon fa-solid fa-list-check"></i>
-                    </div>
-                  </div>
+                <div class="skill-tags">
+                  <span>PostgreSQL</span>
+                  <span>MySQL</span>
+                  <span>MongoDB</span>
+                  <span>GraphQL</span>
+                  <span>Hasura</span>
+                  <span>Relational Design</span>
                 </div>
+              </div>
+            </div>
 
-                <div class="col-md-4 col-12 align-items-stretch">
-                  <div class="services-thumb">
-                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                      <h5 class="mb-0">Software Version Control</h5>
-                    </div>
-
-                    <div class="content">
-                      <p><strong>Git Workflow</strong></p>
-                      <p>Monitoring Changes</p>
-                      <p>Repository Management</p>
-                      <p>Merge Conflict Resolving</p>
-                      <p>PR & Code Review</p>
-                      <p><strong>BitBucket</strong></p>
-                      <p><strong>GitHub</strong></p>
-                      <p><strong>GitLab</strong></p>
-                    </div>
-
-                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                      <i class="skill-icon fas fa-code-merge"></i>
-                    </div>
-                  </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="services-thumb modern-skill-card">
+                <div class="skill-card-header">
+                  <i class="skill-icon fa-solid fa-list-check"></i>
+                  <h5>Delivery</h5>
                 </div>
-
-                <div class="col-md-4 col-12 align-items-stretch">
-                  <div class="services-thumb">
-                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                      <h5 class="mb-0">Tools & Operations DevOps</h5>
-                    </div>
-
-                    <div class="content">
-                      <p><strong>JetBrains IDE Tools</strong></p>
-                      <p><strong>Docker</strong></p>
-                      <p><strong>Kubernetes</strong></p>
-                      <p><strong>Jenkins</strong></p>
-                      <p><strong>ArgoCD</strong></p>
-                      <p><strong>Amazon AWS</strong></p>
-                      <p><strong>Heroku</strong></p>
-                      <p><strong>Railway.app</strong></p>
-                      <p><strong>Netlify</strong></p>
-                    </div>
-
-                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                      <i class="skill-icon fas fa-user-cog"></i>
-                    </div>
-                  </div>
+                <div class="skill-tags">
+                  <span>Scrum</span>
+                  <span>Kanban</span>
+                  <span>Jira</span>
+                  <span>Sprint Planning</span>
+                  <span>Feature Delivery</span>
                 </div>
+              </div>
+            </div>
 
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="services-thumb modern-skill-card">
+                <div class="skill-card-header">
+                  <i class="skill-icon fas fa-code-merge"></i>
+                  <h5>Version Control</h5>
+                </div>
+                <div class="skill-tags">
+                  <span>Git Workflow</span>
+                  <span>GitHub</span>
+                  <span>GitLab</span>
+                  <span>Bitbucket</span>
+                  <span>Code Review</span>
+                  <span>Merge Strategy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="services-thumb modern-skill-card">
+                <div class="skill-card-header">
+                  <i class="skill-icon fas fa-user-cog"></i>
+                  <h5>Operations</h5>
+                </div>
+                <div class="skill-tags">
+                  <span>Docker</span>
+                  <span>Kubernetes</span>
+                  <span>Jenkins</span>
+                  <span>ArgoCD</span>
+                  <span>AWS</span>
+                  <span>Netlify</span>
+                  <span>Railway</span>
+                </div>
               </div>
             </div>
           </div>
@@ -456,19 +359,14 @@
       </section>
 
 
-      <section class="projects section-padding" id="section_4">
+      <section class="projects modern-section" id="section_4">
         <div class="container">
 
           <!-- Title -->
-          <div class="row">
-            <div class="col-lg-12 col-md-8 col-12 ms-auto">
-              <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
-
-                <i class="section-title-icon fas fa-laptop-code"></i>
-
-                <h3 class="text-white ms-4 mb-0">Portfolio</h3>
-
-              </div>
+          <div class="row mb-4">
+            <div class="col-lg-8 col-12">
+              <div class="section-kicker">Portfolio</div>
+              <h2 class="section-heading">Selected work across web apps, utilities, software, mobile, and design.</h2>
             </div>
           </div>
 
@@ -983,99 +881,47 @@
         </div>
       </section>
 
-      <section class="contact section-padding" id="section_5">
+      <section class="contact modern-section" id="section_5">
         <div class="container">
-          <div class="row">
+          <div class="contact-panel">
+            <div class="row align-items-center g-4">
+              <div class="col-lg-6 col-12">
+                <div class="section-kicker">Contact</div>
+                <h2 class="section-heading">Have a project, product idea, or delivery problem?</h2>
+                <p class="section-copy mb-0">
+                  Reach out for web applications, internal tools, software platforms, interface design, or project
+                  delivery support.
+                </p>
+              </div>
 
-            <div class="col-lg-12 col-md-8 col-12">
-              <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                <i class="section-title-icon fas fa-paper-plane"></i>
+              <div class="col-lg-6 col-12">
+                <div class="contact-grid">
+                  <a class="contact-tile" href="mailto:contact@aboykov.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                    <strong>contact@aboykov.com</strong>
+                  </a>
 
-                <h3 class="text-white ms-4 mb-0">Contact</h3>
+                  <a class="contact-tile" href="tel:+4915213714956">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Phone / WhatsApp</span>
+                    <strong class="mutable-contact-number">{phoneNumber}</strong>
+                  </a>
+
+                  <div class="contact-tile">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Location</span>
+                    <strong class="mutable-location">{location}</strong>
+                  </div>
+
+                  <div class="social-row">
+                    <a href="https://www.instagram.com/alexxity_official/" target="_blank" class="social-icon-link bi-instagram" title="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/a-boykov" target="_blank" class="social-icon-link bi-linkedin" title="LinkedIn"></a>
+                    <a href="https://github.com/abojkov" target="_blank" class="social-icon-link bi-github" title="GitHub"></a>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="col-lg-6 col-md-6 col-12 pe-lg-0">
-              <div class="contact-info contact-info-border-start d-flex flex-column">
-                <strong class="site-footer-title d-block mb-3">Brand</strong>
-
-                <ul class="footer-menu">
-                  <li class="footer-menu-item"><span class="footer-menu-link">alexxity by A. Boykov</span></li>
-                </ul>
-
-                <strong class="site-footer-title d-block mt-4 mb-3">Services</strong>
-
-                <ul class="footer-menu">
-                  <li class="footer-menu-item"><span class="footer-menu-link">Web Apps</span></li>
-
-                  <li class="footer-menu-item"><span class="footer-menu-link">Mobile apps</span></li>
-
-                  <li class="footer-menu-item"><span class="footer-menu-link">Software</span></li>
-
-                  <li class="footer-menu-item"><span class="footer-menu-link">Graphics</span></li>
-                </ul>
-
-                <strong class="site-footer-title d-block mt-4 mb-3">Stay connected</strong>
-
-                <ul class="social-icon">
-                  <li class="social-icon-item">
-                    <a
-                        href="https://www.instagram.com/alexxity_official/"
-                        target="_blank"
-                        class="social-icon-link bi-instagram"
-                    ></a>
-                  </li>
-
-                  <li class="social-icon-item">
-                    <a
-                        href="https://www.linkedin.com/in/a-boykov"
-                        target="_blank"
-                        class="social-icon-link bi-linkedin"></a>
-                  </li>
-
-                  <li class="social-icon-item">
-                    <a
-                        href="https://github.com/abojkov"
-                        target="_blank"
-                        class="social-icon-link bi-github"></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-12 ps-lg-0">
-              <div class="contact-info d-flex flex-column">
-                <strong class="site-footer-title d-block mb-3">Location</strong>
-
-                <ul class="footer-menu">
-                  <li class="footer-menu-item">
-                    <span id='mutable-location' class="footer-menu-link">{location}</span>
-                  </li>
-                </ul>
-
-                <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
-
-                <ul class="footer-menu">
-                  <li class="footer-menu-item">
-                    <a
-                        class="footer-menu-link"
-                        href="mailto:contact@aboykov.com"
-                    >
-                      contact@aboykov.com
-                    </a>
-                  </li>
-                </ul>
-
-                <strong class="site-footer-title d-block mt-4 mb-3">Whatsapp</strong>
-
-                <ul class="footer-menu">
-                  <li class="footer-menu-item">
-                    <a class="mutable-contact-number footer-menu-link">{phoneNumber}</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
@@ -1185,8 +1031,16 @@
         }
 
         const info = getInfo('deu')
-        $('#mutable-location').text(info.location);
-        $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
+        $('.mutable-location').text(info.location);
+        $('.mutable-contact-number').each(function() {
+          const phoneHref = `tel: ${info.number.replaceAll(' ', '')}`;
+          $(this).text(info.number);
+          if ($(this).is('a')) {
+            $(this).attr('href', phoneHref);
+          } else {
+            $(this).closest('a').attr('href', phoneHref);
+          }
+        });
 
         // getIp()
         //   .then(res => {
@@ -1197,17 +1051,17 @@
         //         const isoCode = res.country_code_iso3;
         //
         //         const info = getInfo(isoCode.toLowerCase());
-        //         $('#mutable-location').text(info.location);
+        //         $('.mutable-location').text(info.location);
         //         $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
         //       })
         //       .catch(() => {
         //         const info = getInfo('deu');
-        //         $('#mutable-location').text(info.location);
+        //         $('.mutable-location').text(info.location);
         //         $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
         //       })
         //   }).catch(() => {
         //     const info = getInfo('deu');
-        //     $('#mutable-location').text(info.location);
+        //     $('.mutable-location').text(info.location);
         //     $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
         //   })
       })
