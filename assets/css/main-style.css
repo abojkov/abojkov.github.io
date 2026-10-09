@@ -1733,8 +1733,8 @@ ul li {
 }
 
 .navbar .custom-btn:hover {
-  background: var(--modern-ink);
-  border-color: var(--modern-ink);
+  background: var(--modern-accent-dark);
+  border-color: var(--modern-accent-dark);
   color: var(--white-color);
 }
 
@@ -1754,8 +1754,8 @@ ul li {
 
 .navbar .navbar-phone-link:hover,
 .is-sticky .navbar .navbar-phone-link:hover {
-  background: var(--modern-ink);
-  border-color: var(--modern-ink);
+  background: var(--modern-accent-dark);
+  border-color: var(--modern-accent-dark);
   color: var(--white-color);
 }
 
@@ -2152,7 +2152,7 @@ ul li {
 
 #portfolio-filters li:hover,
 #portfolio-filters li.filter-active {
-  background: var(--modern-ink);
+  background: var(--modern-accent-dark);
   color: var(--white-color);
 }
 
@@ -2235,7 +2235,7 @@ ul li {
 }
 
 .contact-tile:hover {
-  background: var(--modern-ink);
+  background: var(--modern-accent-dark);
   color: var(--white-color);
 }
 
@@ -2280,6 +2280,11 @@ ul li {
   height: 46px;
   justify-content: center;
   width: 46px;
+}
+
+.social-row .social-icon-link:hover {
+  background: var(--modern-accent-dark);
+  color: var(--white-color);
 }
 
 .site-footer {
