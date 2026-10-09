@@ -2160,6 +2160,7 @@ ul li {
   height: calc(100% - 24px);
   margin: 12px 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .projects-info {
@@ -2183,6 +2184,8 @@ ul li {
 
 .projects-thumb a {
   display: block;
+  min-height: 220px;
+  overflow: hidden;
   padding: 0 18px 18px;
 }
 
@@ -2190,8 +2193,11 @@ ul li {
   aspect-ratio: 16 / 11;
   border: 1px solid var(--modern-line);
   border-radius: 10px;
+  display: block;
   object-fit: cover;
-  transform: none;
+  transform: rotate(8deg) translateY(58px) scale(1.04);
+  transform-origin: center bottom;
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
 }
 
 .projects-thumb:hover {
@@ -2201,7 +2207,8 @@ ul li {
 
 .projects-thumb:hover .projects-image,
 .projects-thumb:focus .projects-image {
-  transform: none;
+  box-shadow: 0 18px 38px rgba(21, 33, 36, 0.18);
+  transform: rotate(0) translateY(0) scale(1);
 }
 
 .contact {
@@ -2327,6 +2334,14 @@ ul li {
 
   .hero-actions .custom-btn {
     width: 100%;
+  }
+
+  .projects-thumb a {
+    min-height: 190px;
+  }
+
+  .projects-image {
+    transform: rotate(5deg) translateY(34px) scale(1.02);
   }
 
   #portfolio-filters {
