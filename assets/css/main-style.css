@@ -1633,8 +1633,8 @@ h5:not(.services-thumb h5, .projects-thumb h5),
   --modern-ink: #152124;
   --modern-muted: #5f6f74;
   --modern-line: #dce5e3;
-  --modern-accent: #3fc494;
-  --modern-accent-dark: #178766;
+  --modern-accent: #6ea8fe;
+  --modern-accent-dark: #246bce;
   --modern-warm: #d98b36;
   --modern-shadow: 0 18px 50px rgba(21, 33, 36, 0.10);
 }
@@ -1808,7 +1808,7 @@ ul li {
   background: rgba(255, 255, 255, 0.14);
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 999px;
-  color: #d9fff2;
+  color: #eaf2ff;
   padding: 8px 12px;
 }
 
@@ -1835,7 +1835,7 @@ ul li {
 
 .modern-hero {
   background:
-    linear-gradient(135deg, #17373a 0%, #1d6658 54%, #33ad82 100%);
+    linear-gradient(135deg, #132b45 0%, #235b9d 54%, #6ea8fe 100%);
   min-height: 760px;
   overflow: hidden;
   padding: 150px 0 110px;
@@ -1968,7 +1968,7 @@ ul li {
 
 .testimonial-modern i {
   align-items: center;
-  background: rgba(63, 196, 148, 0.16);
+  background: rgba(110, 168, 254, 0.16);
   border-radius: 50%;
   color: var(--modern-accent-dark);
   display: inline-flex;
@@ -2201,7 +2201,7 @@ ul li {
 }
 
 .projects-thumb:hover {
-  border-color: rgba(24, 162, 122, 0.55);
+  border-color: rgba(110, 168, 254, 0.68);
   transform: translateY(-4px);
 }
 
