@@ -974,7 +974,7 @@ ul li {
   max-width: none;
 }
 
-.feedback-row > [class*="col-"] {
+.feedback-row > [class*="col-"]:not(:first-child) {
   padding-bottom: 18px;
 }
 
@@ -1292,7 +1292,7 @@ ul li {
 
   .feedback-row {
     --bs-gutter-x: 0;
-    --bs-gutter-y: 1.5rem;
+    --bs-gutter-y: .25rem;
   }
 
   .feedback-row .testimonial-modern {
