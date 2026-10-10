@@ -1,0 +1,217 @@
+/*---------------------------------------
+  PROJECT DETAIL VARIABLES
+-----------------------------------------*/
+:root {
+  --white-color: #ffffff;
+  --primary-color: #535da1;
+  --secondary-color: #82AAE3;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #e9eaeb;
+  --body-font-family: 'DM Sans', sans-serif;
+  --h6-font-size: 22px;
+  --copyright-font-size: 14px;
+  --border-radius-large: 100px;
+  --font-weight-bold: 700;
+}
+
+body {
+  background: var(--white-color);
+  font-family: var(--body-font-family);
+}
+
+h6 {
+  color: var(--dark-color);
+  font-size: var(--h6-font-size);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -1px;
+}
+
+p,
+ul li {
+  color: var(--p-color);
+}
+
+a {
+  color: var(--p-color);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+::selection {
+  background: var(--secondary-color);
+  color: var(--white-color);
+}
+
+::-moz-selection {
+  background: var(--secondary-color);
+  color: var(--white-color);
+}
+
+/*---------------------------------------
+  PROJECT ALERTS
+-----------------------------------------*/
+.aby-alert {
+  padding: 15px;
+  background-color: #f44336;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.aby-alert,
+.aby-alert * {
+  color: var(--white-color) !important;
+}
+
+.aby-alert .fa,
+.aby-alert .fas,
+.aby-alert .fab {
+  margin-right: 10px;
+}
+
+.aby-alert.success { background-color: #04AA6D; }
+.aby-alert.info { background-color: #2196F3; }
+.aby-alert.warning { background-color: #ff9800; }
+
+/*---------------------------------------
+  PROJECT DETAILS
+-----------------------------------------*/
+.portfolio-title {
+  background: var(--white-color);
+  border-radius: var(--border-radius-large);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  color: var(--secondary-color);
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 23px;
+  text-align: center;
+  width: 100%;
+}
+
+.portfolio-details .portfolio-info {
+  padding-top: 62px;
+}
+
+.portfolio-details .portfolio-info .disabled-link,
+.portfolio-details .portfolio-info .disabled-link:hover {
+  color: gray;
+}
+
+.portfolio-details .portfolio-info * {
+  color: var(--dark-color);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-info p {
+  font-size: 15px;
+  padding: 0;
+  text-align: justify;
+}
+
+.portfolio-details .portfolio-info a {
+  color: var(--primary-color);
+}
+
+.portfolio-details .portfolio-info a:hover {
+  color: var(--secondary-color);
+}
+
+/*---------------------------------------
+  VENOBOX
+-----------------------------------------*/
+.venoratio {
+  width: 70%;
+}
+
+.vbox-content img {
+  max-height: 93vh;
+}
+
+/*---------------------------------------
+  CAROUSEL
+-----------------------------------------*/
+.portfolio-details .owl-carousel .owl-nav,
+.portfolio-details .owl-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.portfolio-details .owl-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.portfolio-details .owl-carousel .owl-dot.active {
+  background-color: var(--primary-color) !important;
+}
+
+/*---------------------------------------
+  EXPANDABLE CARD
+-----------------------------------------*/
+.expandable-card-title {
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.expandable-card-title .right {
+  float: right;
+}
+
+.expandable-card-content {
+  display: none;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.expandable-card-content * {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.expandable-card-content li {
+  text-align: left;
+}
+
+.expandable-card-content a {
+  text-decoration: underline;
+}
+
+.expandable-card-content a:hover {
+  color: lightgray !important;
+}
+
+@media screen and (max-width: 575px) {
+  .portfolio-title {
+    width: 100%;
+  }
+
+  .venoratio {
+    width: 100%;
+    height: 70vh;
+  }
+}
