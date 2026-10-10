@@ -971,6 +971,7 @@ ul li {
 }
 
 .feedback-row {
+  margin-top: 5rem !important;
   max-width: none;
 }
 
@@ -1291,8 +1292,13 @@ ul li {
   }
 
   .feedback-row {
+    margin-top: 3rem !important;
     --bs-gutter-x: 0;
-    --bs-gutter-y: .25rem;
+    --bs-gutter-y: .5rem;
+  }
+
+  .feedback-row > [class*="col-"]:nth-child(n+3) {
+    margin-top: 2rem;
   }
 
   .feedback-row .testimonial-modern {
