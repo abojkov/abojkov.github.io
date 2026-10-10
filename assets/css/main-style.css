@@ -972,7 +972,6 @@ ul li {
 
 .feedback-row {
   max-width: none;
-  width: 100%;
 }
 
 .feedback-row > [class*="col-"] {
@@ -1289,6 +1288,15 @@ ul li {
 
   .hero-actions .custom-btn {
     width: 100%;
+  }
+
+  .feedback-row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 1.5rem;
+  }
+
+  .feedback-row .testimonial-modern {
+    padding: 24px;
   }
 
   .projects-thumb a {
