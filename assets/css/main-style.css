@@ -791,7 +791,7 @@ ul li {
     linear-gradient(135deg, #132b45 0%, #235b9d 54%, #6ea8fe 100%);
   min-height: 760px;
   overflow: hidden;
-  padding: 150px 0 110px;
+  padding: 150px 0 50px;
   position: relative;
 }
 
