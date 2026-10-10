@@ -1181,14 +1181,20 @@ ul li {
   padding: 18px;
 }
 
-.contact-tile:hover {
-  background: var(--modern-accent-dark);
-  color: var(--white-color);
+a.contact-tile {
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-tile:hover span,
-.contact-tile:hover strong,
-.contact-tile:hover i {
+a.contact-tile:hover {
+  background: var(--modern-accent-dark);
+  border-color: var(--modern-accent-dark);
+  color: var(--white-color);
+  transform: translateY(-2px);
+}
+
+a.contact-tile:hover span,
+a.contact-tile:hover strong,
+a.contact-tile:hover i {
   color: var(--white-color);
 }
 
@@ -1211,6 +1217,12 @@ ul li {
   font-size: 16px;
   margin-top: 4px;
   overflow-wrap: anywhere;
+}
+
+a.contact-tile i,
+a.contact-tile span,
+a.contact-tile strong {
+  transition: color 0.3s ease;
 }
 
 .social-row {
