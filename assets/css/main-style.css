@@ -737,7 +737,7 @@ ul li {
 }
 
 .modern-section {
-  padding: 96px 0;
+  padding: 60px 0;
 }
 
 .section-soft {
@@ -1264,7 +1264,7 @@ ul li {
   }
 
   .modern-section {
-    padding: 76px 0;
+    padding: 56px 0;
   }
 }
 
@@ -1285,6 +1285,10 @@ ul li {
 
   .section-heading {
     font-size: 30px;
+  }
+
+  .modern-section {
+    padding: 48px 0;
   }
 
   .hero-actions .custom-btn {
