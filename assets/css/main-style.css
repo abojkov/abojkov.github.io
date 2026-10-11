@@ -1333,6 +1333,26 @@ a.contact-tile strong {
     transform: rotate(5deg) translateY(34px) scale(1.02);
   }
 
+  .vbox-container {
+    padding-bottom: 12px;
+    padding-top: 44px;
+  }
+
+  .vbox-content {
+    align-items: stretch;
+    padding: 0 10px;
+  }
+
+  .vbox-content .venoratio {
+    height: calc(100vh - 56px);
+    height: calc(100dvh - 56px);
+    width: 100%;
+  }
+
+  .vbox-content .venoratio::before {
+    display: none;
+  }
+
   #portfolio-filters {
     border-radius: 12px;
     display: grid;
