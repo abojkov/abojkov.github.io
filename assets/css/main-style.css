@@ -1278,6 +1278,13 @@ a.contact-tile strong {
 }
 
 @media screen and (max-width: 575px) {
+  .modern-hero > .container,
+  .modern-section > .container,
+  .site-footer > .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .modern-hero {
     padding: 112px 0 72px;
   }
