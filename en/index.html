@@ -178,7 +178,7 @@
                 <div class="col-sm-6 col-12">
                   <div class="metric-card">
                     <strong>40+</strong>
-                    <span>Projects Finished</span>
+                    <span>Projects Delivered</span>
                   </div>
                 </div>
 
@@ -1020,20 +1020,7 @@
 
     <script>
       $(document).ready(function() {
-        // const getIp = async () => {
-        //   return $.ajax({
-        //     type: 'GET',
-        //     url: 'https://api.ipify.org/?format=json'
-        //   })
-        // }
-
-        // const getGeoLoc = async (ip) => {
-        //   return $.ajax({
-        //     type: 'GET',
-        //     url: `https://ipapi.co/${ip}/json`
-        //   })
-        // }
-
+        // Dynamic contact info based on location
         const getInfo = (iso) => {
           const info = {
             de: {
@@ -1050,19 +1037,11 @@
             },
           }
 
-          switch (iso) {
-            case 'deu':
-              return info.de
-            // case 'bgr':
-            //   return info.bg
-            // case 'usa':
-            //   return info.us
-            default:
-              return info.de
-          }
+          // Currently show only Germany
+          return info['de'];
         }
 
-        const info = getInfo('deu')
+        const info = getInfo('bg')
         $('.mutable-location').text(info.location);
         $('.mutable-contact-number').each(function() {
           const phoneHref = `tel: ${info.number.replaceAll(' ', '')}`;
@@ -1074,28 +1053,24 @@
           }
         });
 
-        // getIp()
-        //   .then(res => {
-        //     const ipAddress = res.ip
-        //
-        //     getGeoLoc(ipAddress)
-        //       .then(res => {
-        //         const isoCode = res.country_code_iso3;
-        //
-        //         const info = getInfo(isoCode.toLowerCase());
-        //         $('.mutable-location').text(info.location);
-        //         $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
-        //       })
-        //       .catch(() => {
-        //         const info = getInfo('deu');
-        //         $('.mutable-location').text(info.location);
-        //         $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
-        //       })
-        //   }).catch(() => {
-        //     const info = getInfo('deu');
-        //     $('.mutable-location').text(info.location);
-        //     $('.mutable-contact-number').text(info.number).attr('href', `tel: ${info.number.replaceAll(' ', '')}`);
+        // Geolocation detection (currently disabled)
+        // const getIp = async () => {
+        //   return $.ajax({
+        //     type: 'GET',
+        //     url: 'https://api.ipify.org/?format=json'
         //   })
+        // }
+        // const getGeoLoc = async (ip) => {
+        //   return $.ajax({
+        //     type: 'GET',
+        //     url: `https://ipapi.co/${ip}/json`
+        //   })
+        // }
+        // getIp().then(res => {
+        //   const location = getGeoLoc(res.ip).then(res => {
+        //     console.log(res)
+        //   })
+        // })
       })
     </script>
   </body>

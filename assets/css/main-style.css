@@ -180,7 +180,7 @@ strong {
   margin-top: -22px;
   margin-left: -22px;
   border-radius: 50%;
-  border: 5px solid var(--primary-color);
+  border: 5px solid var(--modern-accent-dark);
   border-top-color: var(--white-color);
   animation: spinner .9s linear infinite;
 }
